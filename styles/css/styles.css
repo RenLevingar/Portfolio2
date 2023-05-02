@@ -25,7 +25,7 @@ div div li a {
   background-repeat: repeat-x;
   background-size: 200vw 200vh;
   right: 0;
-  animation-duration: 1200s;
+  animation-duration: 600s;
   animation-name: spaceBG;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -50,6 +50,10 @@ div div li a {
   top: 0;
   z-index: 3;
   width: 100%;
+}
+.navbar button {
+  color: white;
+  background-color: white;
 }
 
 .aboutPlanet {
@@ -151,4 +155,9 @@ div div li a {
 
 .width-100 {
   width: 100%;
+}
+
+.container {
+  z-index: 3;
+  color: green;
 }/*# sourceMappingURL=styles.css.map */
