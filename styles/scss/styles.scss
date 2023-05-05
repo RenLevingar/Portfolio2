@@ -84,6 +84,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotateColor 20s alternate infinite;
 
     div {
         font-size: 60px;
@@ -104,6 +105,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotateColor 20s alternate infinite;
 
     div {
         font-size: 24px;
@@ -125,6 +127,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotateColor 20s alternate infinite;
 
     div {
         font-size: 36px;
@@ -145,6 +148,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotateColor 20s alternate infinite;
 
     div {
         font-size: 30px;
@@ -166,6 +170,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotateColor 20s alternate infinite;
 
     div {
         font-size: 18px;
@@ -180,4 +185,9 @@ div {
 .container {
     z-index: 3;
     color: green;
+}
+@keyframes rotateColor {
+    to{
+        filter: hue-rotate(1turn);
+    }
 }

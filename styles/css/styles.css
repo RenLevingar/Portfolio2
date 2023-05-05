@@ -70,6 +70,7 @@ div div li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: rotateColor 20s alternate infinite;
 }
 .aboutPlanet div {
   font-size: 60px;
@@ -89,6 +90,7 @@ div div li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: rotateColor 20s alternate infinite;
 }
 .resumePlanet div {
   font-size: 24px;
@@ -109,6 +111,7 @@ div div li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: rotateColor 20s alternate infinite;
 }
 .servicesPlanet div {
   font-size: 36px;
@@ -128,6 +131,7 @@ div div li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: rotateColor 20s alternate infinite;
 }
 .projectsPlanet div {
   font-size: 30px;
@@ -148,6 +152,7 @@ div div li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: rotateColor 20s alternate infinite;
 }
 .contactPlanet div {
   font-size: 18px;
@@ -160,4 +165,10 @@ div div li a {
 .container {
   z-index: 3;
   color: green;
+}
+
+@keyframes rotateColor {
+  to {
+    filter: hue-rotate(1turn);
+  }
 }/*# sourceMappingURL=styles.css.map */
