@@ -171,4 +171,7 @@ div div li a {
   to {
     filter: hue-rotate(1turn);
   }
+}
+.container {
+  flex-wrap: wrap;
 }/*# sourceMappingURL=styles.css.map */
