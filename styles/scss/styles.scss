@@ -6,7 +6,6 @@
 * {
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
     overflow-x: hidden;
     color: black;
     font-family: bruno;
@@ -23,22 +22,22 @@ div {
 }
 
 // Background
-.space {
-    width: 2000vw;
-    margin-left: -1500vw;
-    height: 120vh;
-    justify-content: center;
-    align-items: center;
+body {
+    // width: 2000vw;
+    // margin-left: -1500vw;
+    // height: 120vh;
+    // justify-content: center;
+    // align-items: center;
     background-image: url('../../images/spaceBG.jpg');
-    background-repeat: repeat-x;
-    background-size: 200vw 200vh;
-    right: 0;
-    animation-duration: 600s;
-    animation-name: spaceBG;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    position: relative;
-    z-index: 0;
+    // background-repeat: repeat;
+    // background-size: 200vw 200vh;
+    // right: 0;
+    // animation-duration: 600s;
+    // animation-name: spaceBG;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // position: relative;
+    // z-index: 0;
 }
 
 @keyframes spaceBG {
@@ -58,7 +57,7 @@ div {
 // Header
 .navbar {
     font-size: 2.5rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 3;
     width: 100%;
@@ -186,11 +185,17 @@ div {
     z-index: 3;
     color: green;
 }
+
 @keyframes rotateColor {
-    to{
+    to {
         filter: hue-rotate(1turn);
     }
 }
-.container{
+
+.container {
     flex-wrap: wrap;
+}
+
+.mt-10 {
+    margin-top: 7rem;
 }
