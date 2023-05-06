@@ -42,20 +42,20 @@ body {
 }
 
 .aboutPlanet {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background-color: black;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
-  top: calc(50% - 200px);
-  right: calc(50% - 200px);
+  top: calc(50% - 250px);
+  right: calc(50% - 250px);
   background-image: url("../../images/mainPlanet.png");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateColor 20s alternate infinite;
+  animation: rotateColor 50s alternate infinite;
 }
 .aboutPlanet div {
   font-size: 60px;
@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateColor 20s alternate infinite;
+  animation: rotateColor 50s alternate infinite;
 }
 .resumePlanet div {
   font-size: 24px;
@@ -96,7 +96,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateColor 20s alternate infinite;
+  animation: rotateColor 50s alternate infinite;
 }
 .servicesPlanet div {
   font-size: 36px;
@@ -116,7 +116,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateColor 20s alternate infinite;
+  animation: rotateColor 50s alternate infinite;
 }
 .projectsPlanet div {
   font-size: 30px;
@@ -137,7 +137,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateColor 20s alternate infinite;
+  animation: rotateColor 50s alternate infinite;
 }
 .contactPlanet div {
   font-size: 18px;
@@ -163,4 +163,12 @@ body {
 
 .mt-10 {
   margin-top: 7rem;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.hideFlow-Y {
+  overflow-y: hidden;
 }/*# sourceMappingURL=styles.css.map */
