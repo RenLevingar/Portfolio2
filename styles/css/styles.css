@@ -171,4 +171,18 @@ body {
 
 .hideFlow-Y {
   overflow-y: hidden;
+}
+
+.text-blue-900 {
+  color: rgb(13, 71, 161);
+}
+
+.text-red-600 {
+  color: rgb(229, 57, 53);
+}
+
+.serviceBox {
+  box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
+  -webkit-box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
+  -moz-box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
 }/*# sourceMappingURL=styles.css.map */
