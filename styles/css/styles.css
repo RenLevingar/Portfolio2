@@ -60,6 +60,12 @@ body {
 .aboutPlanet div {
   font-size: 60px;
 }
+@media only screen and (max-width: 700px) {
+  .aboutPlanet {
+    top: 50px;
+    right: calc(50% - 250px);
+  }
+}
 
 .resumePlanet {
   width: 160px;
@@ -81,6 +87,12 @@ body {
   font-size: 24px;
   color: white;
 }
+@media only screen and (max-width: 700px) {
+  .resumePlanet {
+    top: 575px;
+    left: calc(50% - 80px);
+  }
+}
 
 .servicesPlanet {
   width: 240px;
@@ -100,6 +112,12 @@ body {
 }
 .servicesPlanet div {
   font-size: 36px;
+}
+@media only screen and (max-width: 700px) {
+  .servicesPlanet {
+    top: 750px;
+    left: calc(50% - 120px);
+  }
 }
 
 .projectsPlanet {
@@ -122,6 +140,12 @@ body {
   font-size: 30px;
   color: white;
 }
+@media only screen and (max-width: 700px) {
+  .projectsPlanet {
+    top: 1000px;
+    right: calc(50% - 100px);
+  }
+}
 
 .contactPlanet {
   width: 120px;
@@ -141,6 +165,12 @@ body {
 }
 .contactPlanet div {
   font-size: 18px;
+}
+@media only screen and (max-width: 700px) {
+  .contactPlanet {
+    top: 1200px;
+    right: calc(50% - 60px);
+  }
 }
 
 .width-100 {
@@ -185,4 +215,19 @@ body {
   box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
   -webkit-box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
   -moz-box-shadow: 0px 0px 59px 17px rgb(13, 202, 240);
+}
+
+@media only screen and (max-width: 700px) {
+  #home body {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    margin: 10rem;
+  }
+}
+
+.renPic {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
 }/*# sourceMappingURL=styles.css.map */
