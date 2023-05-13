@@ -1,3 +1,7 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
 @font-face {
     font-family: bruno;
     src: url("../../Bruno_Ace/BrunoAce-Regular.ttf");
@@ -247,19 +251,31 @@ body {
     -moz-box-shadow: 0px 0px 59px 17px rgba(13, 202, 240, 1);
 }
 
-#home{
+#home {
     @media only screen and (max-width: 700px) {
         body {
-          display: flex;
-          flex-direction: column;
-          padding: 10rem;
-          margin: 10rem;
+            display: flex;
+            flex-direction: column;
+            padding: 10rem;
+            margin: 10rem;
         }
-      }
+    }
 }
 
-.renPic{
+.renPic {
     border-radius: 100%;
     width: 5rem;
     height: 5rem;
+}
+
+.h-20r {
+    height: 20rem;
+}
+
+.input-blue::placeholder {
+    color: $info;
+}
+
+.input-purple::placeholder {
+    color: rgb(146, 0, 146);
 }

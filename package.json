@@ -1,7 +1,6 @@
 {
   "name": "portfolio2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +9,14 @@
     "type": "git",
     "url": "git+https://github.com/RenLevingar/Portfolio2.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ren Levingar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/RenLevingar/Portfolio2/issues"
   },
-  "homepage": "https://github.com/RenLevingar/Portfolio2#readme"
+  "homepage": "https://github.com/RenLevingar/Portfolio2#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3"
+  }
 }

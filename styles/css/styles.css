@@ -230,4 +230,12 @@ body {
   border-radius: 100%;
   width: 5rem;
   height: 5rem;
+}
+
+.h-20r {
+  height: 20rem;
+}
+
+.input-purple::placeholder {
+  color: rgb(146, 0, 146);
 }/*# sourceMappingURL=styles.css.map */
