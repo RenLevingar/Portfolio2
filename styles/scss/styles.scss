@@ -1,6 +1,6 @@
-// @import "../node_modules/bootstrap/scss/bootstrap";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 @font-face {
     font-family: bruno;
@@ -94,7 +94,7 @@ body {
     }
 
     @media only screen and (max-width: 700px) {
-        top: 50px;
+        top: 125px;
         right: calc(50% - 250px);
     }
 }
@@ -121,7 +121,7 @@ body {
     }
 
     @media only screen and (max-width: 700px) {
-        top: 575px;
+        top: 650px;
         left: calc(50% - 80px);
     }
 }
@@ -147,7 +147,7 @@ body {
     }
 
     @media only screen and (max-width: 700px) {
-        top: 750px;
+        top: 825px;
         left: calc(50% - 120px);
     }
 }
@@ -174,7 +174,7 @@ body {
     }
 
     @media only screen and (max-width: 700px) {
-        top: 1000px;
+        top: 1075px;
         right: calc(50% - 100px);
     }
 }
@@ -200,7 +200,7 @@ body {
     }
 
     @media only screen and (max-width: 700px) {
-        top: 1200px;
+        top: 1275px;
         right: calc(50% - 60px);
     }
 }
@@ -277,5 +277,9 @@ body {
 }
 
 .input-purple::placeholder {
-    color: rgb(146, 0, 146);
+    color: $purple;
+}
+
+.m-20 {
+    margin: 20px;
 }
