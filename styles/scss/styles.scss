@@ -1,12 +1,15 @@
+// imports tools for bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+// custom font
 @font-face {
     font-family: bruno;
     src: url("../../Bruno_Ace/BrunoAce-Regular.ttf");
 }
 
+// universal selector
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +18,7 @@
     font-family: bruno;
 }
 
+// changes the header colors
 div {
     div {
         li {
@@ -26,37 +30,21 @@ div {
 }
 
 // Background
-body {
-    // width: 2000vw;
-    // margin-left: -1500vw;
-    // height: 120vh;
-    // justify-content: center;
-    // align-items: center;
-    background-image: url('../../images/spaceBG.jpg');
-    // background-repeat: repeat;
-    // background-size: 200vw 200vh;
-    // right: 0;
-    // animation-duration: 600s;
-    // animation-name: spaceBG;
-    // animation-delay: 0s;
-    // animation-iteration-count: infinite;
-    // position: relative;
-    // z-index: 0;
-}
-
-@keyframes spaceBG {
+@keyframes backgroundSlide {
     0% {
-        left: -100px
+      background-position: 0 0;
     }
-
-    50% {
-        left: 7000px;
-    }
-
     100% {
-        right: 7000px;
+      background-position: 100% 0;
     }
-}
+  }
+  
+  body {
+    background-image: url('../../images/spaceBG.jpg');
+    background-repeat: repeat-x;
+    animation: backgroundSlide 15s linear infinite;
+  }
+  
 
 // Header
 .navbar {
@@ -205,52 +193,58 @@ body {
     }
 }
 
-// Other classes/ids
+// width that fills the entire screem
 .width-100 {
     width: 100%;
 }
 
+// this changes many of the things seen trhoughout the site allowing them to always be on top
 .container {
     z-index: 3;
     color: green;
+    flex-wrap: wrap;
 }
 
+// rotates the colors on the plantets
 @keyframes rotateColor {
     to {
         filter: hue-rotate(1turn);
     }
 }
 
-.container {
-    flex-wrap: wrap;
-}
-
+// makes a margin top that allows the entire page to not go into the header
 .mt-10 {
     margin-top: 7rem;
 }
 
+// mes a width that only covers 15% of the page
 .w-15 {
     width: 15%;
 }
 
+// makes the overflow y not visible
 .hideFlow-Y {
     overflow-y: hidden;
 }
 
+// blue font
 .text-blue-900 {
     color: rgb(13, 71, 161);
 }
 
+// red font
 .text-red-600 {
     color: rgb(229, 57, 53);
 }
 
+// gives a glow to the boxes on the services page
 .serviceBox {
     box-shadow: 0px 0px 59px 17px rgba(13, 202, 240, 1);
     -webkit-box-shadow: 0px 0px 59px 17px rgba(13, 202, 240, 1);
     -moz-box-shadow: 0px 0px 59px 17px rgba(13, 202, 240, 1);
 }
 
+// makes the home page size as the screen gets smaller
 #home {
     @media only screen and (max-width: 700px) {
         body {
@@ -262,24 +256,32 @@ body {
     }
 }
 
+// picture of me on the home page
 .renPic {
     border-radius: 100%;
     width: 5rem;
     height: 5rem;
 }
 
+// makes a custom height for the contact page
 .h-20r {
     height: 20rem;
 }
 
+// changes the color of the placeholders on the contact page
 .input-blue::placeholder {
     color: $info;
 }
-
 .input-purple::placeholder {
     color: $purple;
 }
 
+// makes a custom margin
 .m-20 {
     margin: 20px;
+}
+
+// an alternative way to make something display flex rather than bootstrap
+.displayFlex{
+    display: flex;
 }
